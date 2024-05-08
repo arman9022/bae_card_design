@@ -19,6 +19,7 @@ p{
   .nfcLogo{ width: 200px; }
   .baeLogo{ width: 150px; }
   .text1{ font-size: 18px; }
+  .arrow{ width: 15px; }
 }
 
 /* tab */
@@ -28,7 +29,10 @@ p{
 
 /* laptop */
 @media screen and (min-width: 771px) {
-
+  .nfcLogo{ width: 200px; }
+  .baeLogo{ width: 150px; }
+  .text1{ font-size: 18px; }
+  .arrow{ width: 15px; }
 }
 
 .btn {
@@ -99,4 +103,22 @@ p{
   --bs-btn-disabled-border-color: #f8f9fa;
   --bs-gradient: none;
   border-radius: 100px;
+}
+
+.ownButtonBlue {
+  text-decoration: none;
+  border-radius: 26px;
+  color: #fff;
+  text-align: center;
+  padding: 8px 20px;
+  border: none;
+  line-height: 24px;
+  font-size: 18px;
+  box-shadow: 0px 5px 15px -5px rgb(0 0 0 / 78%);
+  background: linear-gradient(to top,#671AE4 6.04%,#B75CFF 92.95%);
+
+}
+.ownButtonBlue:hover{
+  color: white;
+  background: linear-gradient(to top,#B75CFF, #671AE4);
 }

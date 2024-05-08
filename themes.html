@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row py-5 justify-content-center">
+        <div class="col-md-6 col-11">
+          <div class="row text-center">
+            <div class="col-12">
+              <h1>Browse themes</h1>
+              <p>Choose your favorite theme from the below. you can switch themes anytime at <span class="fw-bold">Bae Card<sup>TM</sup> </span> </p>
+            </div>
+          </div>
+          <div class="row py-4">
+            <div class="col-md-6 text-center">
+              <a href="" class="text-decoration-none text-white">
+                <img src="./t1.png" alt="theme" class="img-fluid">
+                Theme 1
+              </a>
+            </div>
+            <div class="col-md-6 text-center pt-md-0 pt-5">
+              <a href="" class="text-decoration-none text-white">
+                <img src="./t2.png" alt="theme" class="img-fluid">
+                Theme 2
+              </a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 text-center">
+              <a href="./profile.html" class="btn btn-outline-mylight me-md-3 p-info-cancel-edit">Go Back</a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+
+        const editToggle = document.querySelector('.p-info-edit-toggle');
+        const cancelEdit = document.querySelector('.p-info-cancel-edit');
+        const p_info_0 = document.getElementById('p_info_0');
+        const p_info_1 = document.getElementById('p_info_1');
+        const p_info_2 = document.getElementById('p_info_2');
+  
+        editToggle.addEventListener('click', function (event) {
+          event.preventDefault();
+          p_info_0.style.display = 'none';
+          pr_info_0.style.display = 'none';
+          p_info_1.style.display = 'none';
+          p_info_2.style.display = 'block';
+        });
+  
+        cancelEdit.addEventListener('click', function (event) {
+          event.preventDefault();
+          p_info_0.style.display = 'inline';
+          pr_info_0.style.display = 'inline';
+          p_info_1.style.display = 'block';
+          p_info_2.style.display = 'none';
+        });
+
+
+        const preditToggle = document.querySelector('.pr-info-edit-toggle');
+        const prcancelEdit = document.querySelector('.pr-info-cancel-edit');
+        const pr_info_0 = document.getElementById('pr_info_0');
+        const pr_info_1 = document.getElementById('pr_info_1');
+        const pr_info_2 = document.getElementById('pr_info_2');
+
+        preditToggle.addEventListener('click', function (event) {
+          event.preventDefault();
+          pr_info_0.style.display = 'none';
+          p_info_0.style.display = 'none';
+          pr_info_1.style.display = 'none';
+          pr_info_2.style.display = 'block';
+        });
+
+        prcancelEdit.addEventListener('click', function (event) {
+          event.preventDefault();
+          pr_info_0.style.display = 'inline';
+          p_info_0.style.display = 'inline';
+          pr_info_1.style.display = 'block';
+          pr_info_2.style.display = 'none';
+        });
+
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
