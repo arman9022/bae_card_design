@@ -16,10 +16,10 @@ p{
 
 /* mobile */
 @media screen and (max-width: 426px) {
-  .nfcLogo{ width: 200px; }
-  .baeLogo{ width: 150px; }
+  .nfcLogo{ width: 150px; }
+  .baeLogo{ width: 130px; }
   .text1{ font-size: 18px; }
-  .arrow{ width: 15px; }
+  .arrow{ width: 10px; }
 }
 
 /* tab */
