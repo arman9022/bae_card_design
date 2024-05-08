@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./style.css">
     <style>
       :root{
-        --primary-color1: #262626;
-        --primary-color2: #141414;
+        --primary-color1: #FFFFFF;
+        --primary-color2: #D9D9D9;
       }
       body{
         background: var(--primary-color1);
@@ -40,11 +40,14 @@
         margin-top: -50px; 
         margin-left: 30px;
       }
+      .pHead{
+        color:black;
+      }
       .pSubHead{
-        color:#8A8A8A;
+        color:black;
       }
       .proPara{
-        color:#D9D9D9; 
+        color:black; 
         font-size: 12px;
       }
       .socialDiv{
@@ -57,10 +60,47 @@
       .contactSubDiv{
         display: flex; 
         justify-content: space-around;
-      }
+        color: black;
+      } 
       .contactBDiv{
         background: var(--primary-color1);
       }
+      .btn-t1light {
+        --bs-btn-color: #000;
+        --bs-btn-bg: #D9D9D9;
+        --bs-btn-border-color: #D9D9D9;
+        --bs-btn-hover-color: #000;
+        --bs-btn-hover-bg: #d3d4d5;
+        --bs-btn-hover-border-color: #c6c7c8;
+        --bs-btn-focus-shadow-rgb: 211,212,213;
+        --bs-btn-active-color: #000;
+        --bs-btn-active-bg: #c6c7c8;
+        --bs-btn-active-border-color: #babbbc;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #000;
+        --bs-btn-disabled-bg: #f8f9fa;
+        --bs-btn-disabled-border-color: #f8f9fa;
+        border-radius: 100px;
+    }
+      .btn-outline-t1light {
+        --bs-btn-color: #000;
+        --bs-btn-bg: transparent;
+        --bs-btn-border-color: #000;
+
+        --bs-btn-hover-color: #000;
+        --bs-btn-hover-bg: #D9D9D9;
+        --bs-btn-hover-border-color: #D9D9D9;
+
+        --bs-btn-focus-shadow-rgb: 211,212,213;
+        --bs-btn-active-color: #000;
+        --bs-btn-active-bg: #c6c7c8;
+        --bs-btn-active-border-color: #babbbc;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #000;
+        --bs-btn-disabled-bg: #f8f9fa;
+        --bs-btn-disabled-border-color: #f8f9fa;
+        border-radius: 100px;
+    }
     </style>
   </head>
   <body>
@@ -69,7 +109,7 @@
         <div class="col-md-5 col-12">
           <div class="row">
             <div class="coverDiv">
-              <a href="./theme1light.html" class="btn btn-mylight p-0 px-2 mt-2 fw-bold">Light Mode</a> 
+              <a href="./theme1dark.html" class="btn btn-mylight p-0 px-2 mt-2 fw-bold">Dark Mode</a> 
               <!-- <i class="bi bi-toggle-off display-4"></i> -->
               <!-- <i class="bi bi-toggle2-off display-1"></i> -->
             </div>
@@ -79,7 +119,7 @@
           </div>
           <div class="row justify-content-center">
             <div class="col-11 pt-2">
-              <h3>Aabir Ahammed</h3>
+              <h3 class="pHead">Aabir Ahammed</h3>
               <h6 class="pSubHead">Khulna, BD | Manager, Company</h6>
               <p class="proPara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dignissimos eaque minima id doloremque numquam quia, ad alias rerum culpa.</p>
             </div>
@@ -118,8 +158,8 @@
                 <div><i class="bi bi-telephone"></i></div>
               </div>
               <div class="row">
-                <div class="col-2 pe-0"><hr></div>
-                <div class="col-10"><hr></div>
+                <div class="col-2 pe-0"><hr class="text-dark"></div>
+                <div class="col-10"><hr class="text-dark"></div>
               </div>
               <div class="pb-3 contactSubDiv">
                 <div><i class="bi bi-buildings p-2 rounded-circle contactBDiv"></i></div>
@@ -142,12 +182,12 @@
           <div class="row justify-content-center pb-3">
             <div class="col-8 col-7 mt-md-2 mt-3">
               <div class="row">
-                <a href="" class="btn btn-outline-mylight py-3">Save Contact</a>
+                <a href="" class="btn btn-outline-t1light py-3">Save Contact</a>
               </div>
             </div>
             <div class="col-8 col-7 mt-md-3 mt-3">
               <div class="row">
-                <a href="" class="btn btn-mylight py-3">Connect</a>
+                <a href="" class="btn btn-t1light py-3">Connect</a>
               </div>
             </div>
           </div>
