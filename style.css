@@ -13,6 +13,9 @@ h1{
 p{
   font-family: "Poppins", sans-serif;
 }
+a{
+  font-family: "Poppins", sans-serif;
+}
 
 /* mobile */
 @media screen and (max-width: 426px) {
